@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hat Photography</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+      .language-switch {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px 14px;
+        background: #f7f5f2;
+        border: 1px solid #a88c68;
+        border-radius: 25px;
+        color: #7f6242;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        white-space: nowrap;
+        transition: 0.3s;
+      }
+
+      .language-switch:hover {
+        background: #a88c68;
+        color: white;
+      }
+    
+    body {
+      margin: 0;
+      font-family: Verdana, sans-serif;
+      color: #292929;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: white;
+      padding: 15px 0;
+    }
+
+    .logo {
+      max-width: 150px;
+      max-height: 60px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+    }
+    
+
+    .nav-link {
+      color: #333;
+      font-size: 16px;
+    }
+
+    .nav-link:hover {
+      color: #a88c68;
+    }
+
+    @media (min-width: 992px) {
+      .logo-space {
+        width: 160px;
+        flex-shrink: 0;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      width: 100%;
+      height: 420px;
+
+      background-image:
+        linear-gradient(
+          to right,
+          rgba(0,0,0,0.6),
+          transparent
+        ),
+        url("img/0D4A1693.jpg");
+
+      background-size: cover;
+      background-position: center 57%;
+      background-repeat: no-repeat;
+
+      display: flex;
+      align-items: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 5vw, 60px);
+    }
+
+    .hero p {
+      font-size: 16px;
+      line-height: 1.9;
+    }
+
+    /* Section Titles */
+    .section-title {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+    }
+
+    /* Portfolio */
+    .portfolio-item {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: #f7f5f2;
+      height: 100%;
+    }
+
+    .portfolio-image {
+      overflow: hidden;
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .portfolio-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .portfolio-text {
+      padding: 15px;
+    }
+
+    /* About Me */
+    .about {
+      background: #f7f5f2;
+      padding: 70px 0;
+    }
+
+    .about img {
+      width: 100%;
+      height: 330px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Services */
+    .service-icon {
+      font-size: 38px;
+      color: #a88c68;
+    }
+
+    /* Contact */
+    .contact {
+      background-image:
+        linear-gradient(
+          rgba(0,0,0,0.35),
+          rgba(0,0,0,0.45)
+        ),
+        url("img/S__20512800.jpg");
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      color: white;
+      padding: 85px 0;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: #252525;
+      color: white;
+      padding: 25px 0;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      color: #c9ad88;
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+      .hero {
+        height: 300px;
+      }
+
+      .portfolio-item img {
+        height: 150px;
+      }
+
+      .about img {
+        height: 280px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+
+    <!-- Logo Left -->
+    <a class="navbar-brand logo-space" href="index-jp.html">
+      <img src="img/S__20512819.jpg" alt="Hat Photography Logo" class="logo">
+    </a>
+
+    <!-- Mobile Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Center Menu -->
+    <div class="collapse navbar-collapse justify-content-lg-center" id="navbarMenu">
+      <ul class="navbar-nav gap-lg-3 text-center">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">ホーム</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">ギャラリー</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">撮影サービス</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">自己紹介</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">お問い合わせ</a>
+        </li>
+
+        <!-- Mobile Language -->
+        <li class="nav-item d-lg-none">
+          <a class="nav-link language-switch" href="index.html">EN / English</a>
+        </li>
+
+        <!-- Mobile Admin Login -->
+        <li class="nav-item d-lg-none">
+          <a class="nav-link" href="/admin/"><i class="bi bi-lock"></i> Login</a>
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- Desktop Language & Admin Login -->
+    <div class="d-none d-lg-flex justify-content-end align-items-center gap-2">
+      <a href="index.html" class="language-switch">EN / English</a>
+      <a href="/admin/" class="btn btn-outline-dark btn-sm"><i class="bi bi-lock"></i> Login</a>
+    </div>
+
+  </div>
+</nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Stories<br>Through My Lens</h1>
+
+      <p class="my-4">「何気ない瞬間も、美しい景色も。心に残る一枚を。」</p>
+      <a href="#portfolio" class="btn btn-light px-4 me-2">写真を見る</a>
+      <a href="#about" class="btn btn-outline-light px-4">自己紹介</a>
+    </div>
+  </section>
+
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="container py-5">
+    <div class="section-title">
+      <h2>Portfolio</h2>
+      <p>レンズ越しに切り取った、さまざまな瞬間を集めました。</p>
+    </div>
+
+    <div class="row g-3">
+      <!-- Animal -->
+      <div class="col-6 col-lg-3">
+        <a href="animal_photography-jp.html" class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/S__20553739_0.jpg" alt="Animal Photography">
+          </div>
+
+          <div class="portfolio-text text-center">
+            <h5>動物撮影 / ANIMALS</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- People & Events -->
+      <div class="col-6 col-lg-3">
+        <a href="people_events-jp.html" class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/S__20553748_0.jpg" alt="People & Events">
+          </div>
+
+          <div class="portfolio-text text-center">
+            <h5>人物・イベント / PEOPLE & EVENTS</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Landscape -->
+      <div class="col-6 col-lg-3">
+        <a href="landscape_photography-jp.html" class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/19_20250426BNE airpoort.jpg" alt="Landscape photography">
+          </div>
+
+          <div class="portfolio-text text-center">
+            <h5>風景・自然 / LANDSCAPES</h5>
+          </div>
+        </a>
+      </div>
+
+      <!-- Drone & Aerial Photography -->
+      <div class="col-6 col-lg-3">
+        <a href="drone_aerial_photography-jp.html" class="portfolio-item">
+          <div class="portfolio-image">
+            <img src="img/S__20512800.jpg" alt="Drone & Aerial Photography">
+          </div>
+
+          <div class="portfolio-text text-center">
+            <h5>ドローン・空撮 / AERIAL</h5>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ABOUT ME -->
+  <section id="about" class="about">
+    <div class="container">
+
+      <div class="row align-items-center g-4">
+        <!-- Left Photo -->
+        <div class="col-md-6">
+          <img src="img/S__20553742_00.jpg" alt="Photographer">
+        </div>
+
+        <!-- Right Text -->
+        <div class="col-md-6">
+
+          <h2>プロフィール</h2>
+          <h4 class="mt-3">菅井  駿生 / SUGAI SHUNKI</h4>
+
+          <h5 class="mt-3">フォトグラファー・ドローンオペレーター</h5>
+
+          <p class="my-4">
+            オーストラリア・オセアニアを拠点に活動するフォトグラファーです。
+            人物、イベント、旅行、野生動物、スポーツ、風景など、幅広いジャンルの撮影を行っています。
+            また、日本のテレビ番組やメディア制作にも携わり、現地リサーチ、ロケーションや取材のコーディネート、日本語・英語でのコミュニケーションサポートも行っています。
+            これまでにELLE、GQ、Hulu、テレビ番組、スポーツ関連メディアなどでの撮影実績があります。
+            オーストラリア・オセアニア各地での撮影依頼を承っています。企画段階でもお気軽にご相談ください。
+          </p>
+
+          <p>
+            プロフェッショナルな写真撮影からドローンによる空撮まで、お客様のイメージを形にするお手伝いをいたします。
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SERVICES -->
+  <section id="services" class="container py-5">
+
+    <div class="section-title">
+      <h2>撮影サービス</h2>
+      <p>あなたの大切な瞬間を、写真に残します。</p>
+    </div>
+
+    <div class="row text-center g-4">
+
+      <div class="col-md-4">
+        <i class="bi bi-heart service-icon"></i>
+        <h5 class="mt-3">動物撮影</h5>
+        <p>ペットから野生動物まで、動物たちの自然な姿や魅力を写真に残します。</p>
+      </div>
+
+      <div class="col-md-4">
+        <i class="bi bi-camera service-icon"></i>
+        <h5 class="mt-3">記念日・イベント撮影</h5>
+        <p>誕生日や記念日、特別なイベント。
+           大切な思い出を一枚一枚に残します。
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <i class="bi bi-image service-icon"></i>
+        <h5 class="mt-3">ドローン・風景撮影</h5>
+        <p>空から見える景色や、自然が織りなす美しい風景を写真に収めます。</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+
+      <h2>あなたの大切な瞬間を、写真に。</h2>
+
+      <p class="my-3">
+        お気軽に撮影のご相談ください。まずは話だけでもOK！<br>
+        一緒に一生残る素敵な一枚を残しましょう。
+      </p>
+
+      <a href="https://www.instagram.com/shunki_the_hatboy/" target="_blank" rel="noopener noreferrer"
+         class="btn btn-light px-4">
+        <i class="bi bi-instagram"></i>お問い合わせ</a>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="row align-items-center text-center g-3">
+        <div class="col-md-4">
+          <i class="bi bi-camera"></i>
+          Hat Photography
+        </div>
+
+        <div class="col-md-4">
+          <a href="#home">ホーム</a>
+          <a href="#portfolio">ポートフォリオ</a>
+          <a href="#about">プロフィール</a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://www.instagram.com/shunki_the_hatboy/">
+            <i class="bi bi-instagram"></i>
+          </a>
+
+          <a href="https://www.youtube.com/@thehatboyau">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

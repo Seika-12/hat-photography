@@ -1,0 +1,16 @@
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: clamp(8px, 1.5vw, 24px) !important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-nav .nav-item {
+    flex: 0 0 auto;
+    min-width: max-content;
+  }
+
+  .navbar-nav .nav-link {
+    white-space: nowrap;
+  }
+}
