@@ -1,8 +1,6 @@
-
 backend:
-  name: github
-  repo: Seika-12/hat-photography
-  branch: main
+  name: turbo-github
+  turbo_site_id: 6c9ae2c4-15e4-452a-9484-89e6bc9779c7
 
 media_folder: "img"
 public_folder: "/img"
