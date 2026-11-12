@@ -20,6 +20,16 @@ collections:
           - label: "Description"
             name: "description"
             widget: "text"
+            
+          - label: "About Me Text"
+            name: "about_text"
+            widget: "text"
+            required: false
+
+          - label: "About Me Photo"
+            name: "about_image"
+            widget: "image"
+            required: false
 
           - label: "Main Photo"
             name: "hero_image"
