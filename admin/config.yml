@@ -1,0 +1,29 @@
+
+backend:
+  name: github
+  repo: Seika-12/hat-photography
+  branch: main
+
+media_folder: "img"
+public_folder: "/img"
+
+collections:
+  - name: "pages"
+    label: "Website Editor"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "content/home.json"
+        fields:
+          - label: "Main Title"
+            name: "title"
+            widget: "string"
+
+          - label: "Description"
+            name: "description"
+            widget: "text"
+
+          - label: "Main Photo"
+            name: "hero_image"
+            widget: "image"
+            required: false
