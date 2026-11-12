@@ -7,62 +7,273 @@ public_folder: "/img"
 
 collections:
   - name: "pages"
-    label: "Website Editor"
+    label: "Website Editor / サイト編集"
     files:
-      - label: "Home Page"
+      - label: "Home Page (English)"
         name: "home"
         file: "content/home.json"
         fields:
-          - label: "Main Title"
+          - label: "Main Title / メインタイトル"
             name: "title"
             widget: "string"
-
-          - label: "Description"
+            required: false
+          - label: "Hero Description / トップの説明"
             name: "description"
             widget: "text"
-            
-          - label: "About Me Text"
+            required: false
+          - label: "About Me Text / 自己紹介"
             name: "about_text"
             widget: "text"
             required: false
-
-          - label: "About Me Photo"
-            name: "about_image"
-            widget: "image"
+          - label: "About Me Additional Text / 追加文章"
+            name: "about_second_text"
+            widget: "text"
             required: false
-
-          - label: "Main Photo"
+          - label: "Contact Title / お問い合わせ見出し"
+            name: "contact_title"
+            widget: "string"
+            required: false
+          - label: "Contact Description / お問い合わせ説明"
+            name: "contact_text"
+            widget: "text"
+            required: false
+          - label: "Service 1 Title / サービス1名"
+            name: "service_1_title"
+            widget: "string"
+            required: false
+          - label: "Service 1 Description / サービス1説明"
+            name: "service_1_description"
+            widget: "text"
+            required: false
+          - label: "Service 2 Title / サービス2名"
+            name: "service_2_title"
+            widget: "string"
+            required: false
+          - label: "Service 2 Description / サービス2説明"
+            name: "service_2_description"
+            widget: "text"
+            required: false
+          - label: "Service 3 Title / サービス3名"
+            name: "service_3_title"
+            widget: "string"
+            required: false
+          - label: "Service 3 Description / サービス3説明"
+            name: "service_3_description"
+            widget: "text"
+            required: false
+          - label: "Hero Background Photo / メイン背景"
             name: "hero_image"
             widget: "image"
             required: false
-
-          - label: "About Me Text"
-            name: "about_text"
-            widget: "text"
-            required: false
-
-          - label: "About Me Photo"
+          - label: "About Photo / 自己紹介写真"
             name: "about_image"
             widget: "image"
             required: false
-
-
-          - label: "Animal Portfolio Photo"
+          - label: "Contact Background Photo / お問い合わせ背景"
+            name: "contact_image"
+            widget: "image"
+            required: false
+          - label: "Instagram URL"
+            name: "instagram_url"
+            widget: "string"
+            required: false
+          - label: "YouTube URL"
+            name: "youtube_url"
+            widget: "string"
+            required: false
+          - label: "Portfolio Cover: Animal"
             name: "portfolio_animal"
             widget: "image"
             required: false
-
-          - label: "People & Events Portfolio Photo"
+          - label: "Portfolio Cover: People"
             name: "portfolio_people"
             widget: "image"
             required: false
-
-          - label: "Landscape Portfolio Photo"
+          - label: "Portfolio Cover: Landscape"
             name: "portfolio_landscape"
             widget: "image"
             required: false
-
-          - label: "Drone Portfolio Photo"
+          - label: "Portfolio Cover: Drone"
             name: "portfolio_drone"
             widget: "image"
             required: false
+      - label: "Home Page (Japanese)"
+        name: "home_jp"
+        file: "content/home-jp.json"
+        fields:
+          - label: "Main Title / メインタイトル"
+            name: "title"
+            widget: "string"
+            required: false
+          - label: "Hero Description / トップの説明"
+            name: "description"
+            widget: "text"
+            required: false
+          - label: "About Me Text / 自己紹介"
+            name: "about_text"
+            widget: "text"
+            required: false
+          - label: "About Me Additional Text / 追加文章"
+            name: "about_second_text"
+            widget: "text"
+            required: false
+          - label: "Contact Title / お問い合わせ見出し"
+            name: "contact_title"
+            widget: "string"
+            required: false
+          - label: "Contact Description / お問い合わせ説明"
+            name: "contact_text"
+            widget: "text"
+            required: false
+          - label: "Service 1 Title / サービス1名"
+            name: "service_1_title"
+            widget: "string"
+            required: false
+          - label: "Service 1 Description / サービス1説明"
+            name: "service_1_description"
+            widget: "text"
+            required: false
+          - label: "Service 2 Title / サービス2名"
+            name: "service_2_title"
+            widget: "string"
+            required: false
+          - label: "Service 2 Description / サービス2説明"
+            name: "service_2_description"
+            widget: "text"
+            required: false
+          - label: "Service 3 Title / サービス3名"
+            name: "service_3_title"
+            widget: "string"
+            required: false
+          - label: "Service 3 Description / サービス3説明"
+            name: "service_3_description"
+            widget: "text"
+            required: false
+      - label: "Animal Gallery / ギャラリー"
+        name: "animal"
+        file: "content/galleries/animal.json"
+        fields:
+          - label: "Title (English)"
+            name: "title_en"
+            widget: "string"
+            required: false
+          - label: "Title (Japanese)"
+            name: "title_jp"
+            widget: "string"
+            required: false
+          - label: "Description (English)"
+            name: "description_en"
+            widget: "text"
+            required: false
+          - label: "Description (Japanese)"
+            name: "description_jp"
+            widget: "text"
+            required: false
+          - label: "Photos / 写真の追加・削除・並び替え"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+              - label: "Alt text / 写真の説明"
+                name: "alt"
+                widget: "string"
+                required: false
+      - label: "People Gallery / ギャラリー"
+        name: "people"
+        file: "content/galleries/people.json"
+        fields:
+          - label: "Title (English)"
+            name: "title_en"
+            widget: "string"
+            required: false
+          - label: "Title (Japanese)"
+            name: "title_jp"
+            widget: "string"
+            required: false
+          - label: "Description (English)"
+            name: "description_en"
+            widget: "text"
+            required: false
+          - label: "Description (Japanese)"
+            name: "description_jp"
+            widget: "text"
+            required: false
+          - label: "Photos / 写真の追加・削除・並び替え"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+              - label: "Alt text / 写真の説明"
+                name: "alt"
+                widget: "string"
+                required: false
+      - label: "Landscape Gallery / ギャラリー"
+        name: "landscape"
+        file: "content/galleries/landscape.json"
+        fields:
+          - label: "Title (English)"
+            name: "title_en"
+            widget: "string"
+            required: false
+          - label: "Title (Japanese)"
+            name: "title_jp"
+            widget: "string"
+            required: false
+          - label: "Description (English)"
+            name: "description_en"
+            widget: "text"
+            required: false
+          - label: "Description (Japanese)"
+            name: "description_jp"
+            widget: "text"
+            required: false
+          - label: "Photos / 写真の追加・削除・並び替え"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+              - label: "Alt text / 写真の説明"
+                name: "alt"
+                widget: "string"
+                required: false
+      - label: "Drone Gallery / ギャラリー"
+        name: "drone"
+        file: "content/galleries/drone.json"
+        fields:
+          - label: "Title (English)"
+            name: "title_en"
+            widget: "string"
+            required: false
+          - label: "Title (Japanese)"
+            name: "title_jp"
+            widget: "string"
+            required: false
+          - label: "Description (English)"
+            name: "description_en"
+            widget: "text"
+            required: false
+          - label: "Description (Japanese)"
+            name: "description_jp"
+            widget: "text"
+            required: false
+          - label: "Photos / 写真の追加・削除・並び替え"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.image}}"
+            fields:
+              - label: "Photo"
+                name: "image"
+                widget: "image"
+              - label: "Alt text / 写真の説明"
+                name: "alt"
+                widget: "string"
+                required: false

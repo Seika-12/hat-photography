@@ -1,0 +1,32 @@
+{
+  "title_en": "Drone & Aerial Photography",
+  "title_jp": "ドローン・風景撮影",
+  "description_en": "Capturing the beauty and personality of animals through my lens.",
+  "description_jp": "空から見える景色や、自然が織りなす美しい風景を写真に収めます。",
+  "images": [
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "Drone & Aerial Photography 1"
+    },
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "Drone & Aerial Photography 2"
+    },
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "Drone & Aerial Photography 3"
+    },
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "Drone & Aerial Photography 4"
+    },
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "Drone & Aerial Photography 5"
+    },
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "Drone & Aerial Photography 6"
+    }
+  ]
+}

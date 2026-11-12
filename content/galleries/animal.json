@@ -1,0 +1,52 @@
+{
+  "title_en": "Animal Photography",
+  "title_jp": "動物撮影 / ANIMALS",
+  "description_en": "Capturing the beauty and unique personalities of animalsthrough my lens.",
+  "description_jp": "ペットから野生動物まで、動物たちの自然な姿や魅力を写真に残します。",
+  "images": [
+    {
+      "image": "/img/S__20553737_0.jpg",
+      "alt": "Animal Photography 1"
+    },
+    {
+      "image": "/img/S__20553739_0.jpg",
+      "alt": "Animal Photography 2"
+    },
+    {
+      "image": "/img/S__20553740_0.jpg",
+      "alt": "Animal Photography 3"
+    },
+    {
+      "image": "/img/S__20553745_0.jpg",
+      "alt": "Animal Photography 4"
+    },
+    {
+      "image": "/img/0D4A0509.jpg",
+      "alt": "Animal Photography 5"
+    },
+    {
+      "image": "/img/27_20250429BNE airpoort.jpg",
+      "alt": "Animal Photography 6"
+    },
+    {
+      "image": "/img/31_20250702BNE airpoort.jpg",
+      "alt": "Animal Photography 7"
+    },
+    {
+      "image": "/img/14_20250113BNE airpoort.jpg",
+      "alt": "Animal Photography 8"
+    },
+    {
+      "image": "/img/37_20260217Opening.jpg",
+      "alt": "Animal Photography 9"
+    },
+    {
+      "image": "/img/0D4A3234.jpg",
+      "alt": "Animal Photography 10"
+    },
+    {
+      "image": "/img/37_20260922Opening.jpg",
+      "alt": "Animal Photography 11"
+    }
+  ]
+}

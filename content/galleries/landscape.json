@@ -1,0 +1,60 @@
+{
+  "title_en": "Landscape Photography",
+  "title_jp": "風景・自然 / LANDSCAPE",
+  "description_en": "Capturing the beauty of nature and breathtaking landscapes through my lens.",
+  "description_jp": "レンズを通して、自然の美しさや息をのむような風景を写真に収めます。",
+  "images": [
+    {
+      "image": "/img/09_20241020BNE airpoort.jpg",
+      "alt": "Landscape Photography 1"
+    },
+    {
+      "image": "/img/19_20250426BNE airpoort.jpg",
+      "alt": "Landscape Photography 2"
+    },
+    {
+      "image": "/img/S__20553733_0.jpg",
+      "alt": "Landscape Photography 3"
+    },
+    {
+      "image": "/img/S__20512799.jpg",
+      "alt": "Landscape Photography 4"
+    },
+    {
+      "image": "/img/S__20553736_0.jpg",
+      "alt": "Landscape Photography 5"
+    },
+    {
+      "image": "/img/S__20512800.jpg",
+      "alt": "Landscape Photography 6"
+    },
+    {
+      "image": "/img/S__20553743_0.jpg",
+      "alt": "Landscape Photography 7"
+    },
+    {
+      "image": "/img/29_20250501BNE airpoort.jpg",
+      "alt": "Landscape Photography 8"
+    },
+    {
+      "image": "/img/0D4A0148.jpg",
+      "alt": "Landscape Photography 9"
+    },
+    {
+      "image": "/img/0D4A1521.jpg",
+      "alt": "Landscape Photography 10"
+    },
+    {
+      "image": "/img/01_20260706BNE airpoort.jpg",
+      "alt": "Landscape Photography 11"
+    },
+    {
+      "image": "/img/05_20240831BNE airpoort.jpg",
+      "alt": "Landscape Photography 12"
+    },
+    {
+      "image": "/img/08_20240918BNE airpoort.jpg",
+      "alt": "Landscape Photography 13"
+    }
+  ]
+}

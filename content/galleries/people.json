@@ -1,0 +1,44 @@
+{
+  "title_en": "People & Events",
+  "title_jp": "記念日・イベント撮影",
+  "description_en": "Capturing genuine emotions, special moments, and unforgettable stories.",
+  "description_jp": "誕生日や記念日、特別なイベント。 大切な思い出を一枚一枚に残します。",
+  "images": [
+    {
+      "image": "/img/S__20553748_0.jpg",
+      "alt": "People & Events 1"
+    },
+    {
+      "image": "/img/S__20553731_0.jpg",
+      "alt": "People & Events 2"
+    },
+    {
+      "image": "/img/06_20240913BNE airpoort.jpg",
+      "alt": "People & Events 3"
+    },
+    {
+      "image": "/img/18_20250116BNE airpoort.jpg",
+      "alt": "People & Events 4"
+    },
+    {
+      "image": "/img/37_20250910BNE airpoort.jpg",
+      "alt": "People & Events 5"
+    },
+    {
+      "image": "/img/messageImage_1794314403253.jpg",
+      "alt": "People & Events 6"
+    },
+    {
+      "image": "/img/S__20602903.jpg",
+      "alt": "People & Events 7"
+    },
+    {
+      "image": "/img/58_20260122BNE airpoort.jpg",
+      "alt": "People & Events 8"
+    },
+    {
+      "image": "/img/S__20512819.jpg",
+      "alt": "People & Events 9"
+    }
+  ]
+}
