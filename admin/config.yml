@@ -35,3 +35,34 @@ collections:
             name: "hero_image"
             widget: "image"
             required: false
+
+          - label: "About Me Text"
+            name: "about_text"
+            widget: "text"
+            required: false
+
+          - label: "About Me Photo"
+            name: "about_image"
+            widget: "image"
+            required: false
+
+
+          - label: "Animal Portfolio Photo"
+            name: "portfolio_animal"
+            widget: "image"
+            required: false
+
+          - label: "People & Events Portfolio Photo"
+            name: "portfolio_people"
+            widget: "image"
+            required: false
+
+          - label: "Landscape Portfolio Photo"
+            name: "portfolio_landscape"
+            widget: "image"
+            required: false
+
+          - label: "Drone Portfolio Photo"
+            name: "portfolio_drone"
+            widget: "image"
+            required: false

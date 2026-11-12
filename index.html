@@ -430,26 +430,27 @@
   </footer>
   <!-- Bootstrap JavaScript -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+  fetch("/content/home.json")
+    .then(response => {
+      if (!response.ok) throw new Error("JSON not found");
+      return response.json();
+    })
+    .then(data => {
+      document.querySelector(".hero h1").textContent =
+        data.title;
 
-<script>
-fetch("/content/home.json")
-  .then(response => {
-    if (!response.ok) throw new Error("JSON not found");
-    return response.json();
-  })
-  .then(data => {
-    document.querySelector(".hero h1").textContent =
-      data.title;
+      document.querySelector(".hero p").textContent =
+        data.description;
 
-    document.querySelector(".hero p").textContent =
-      data.description;
+      if (data.hero_image) {
+        document.querySelector(".hero").style.backgroundImage =
+          `linear-gradient(to right, rgba(0,0,0,0.6), transparent), url("${data.hero_image}")`;
+      }
+    })
+    .catch(error => console.error(error));
+  </script>
 
-    if (data.hero_image) {
-      document.querySelector(".hero").style.backgroundImage =
-        `linear-gradient(to right, rgba(0,0,0,0.6), transparent), url("${data.hero_image}")`;
-    }
-  })
-  .catch(error => console.error(error));
-</script>
 </body>
 </html>
